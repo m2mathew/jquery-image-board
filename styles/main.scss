@@ -19,15 +19,16 @@ body {
 }
 
 .collapsible {
+    margin-bottom: 0;
 
     #collapse-header {
         background-color: #496E99;
         height: 5em;
 
         #toggle-icon {
-            margin-left: 1em;
-            font-size: 4em;
-            text-align: right;
+            // margin-left: 1em;
+            // font-size: 4em;
+            // text-align: right;
         }
     }
 }
@@ -60,10 +61,44 @@ form {
     #submit-button {
         // margin-left: -5px;
         // margin-bottom: 10px;
-
     }
 }
 
-#gallery {
-    font-size: 1.75em;
+.gallery-box {
+    margin-top: 0;
+    background-color: #eee;
+
+    #gallery {
+        font-size: 1.75em;
+        background-color: #E0E1E2;
+        padding: 1em 4em;
+
+        #photo-box {
+            background-color: #fff;
+            box-shadow: -2px 2px 7px #aaa;
+        }
+
+        img {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        p {
+            margin-top: 0;
+            border-top: 1px solid #bbb;
+            padding: 0.25em 0 0.25em 0.5em;
+            text-align: left;
+        }
+    }
+
+    #delete-all-button {
+    }
 }
+
+
+@media screen and (min-width: 48em) {
+
+}
+
+
+
