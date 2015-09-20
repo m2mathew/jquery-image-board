@@ -12,27 +12,52 @@ body {
     margin-top: 0;
     margin-bottom: 0; }
 
-.collapsible {
+nav {
   margin-bottom: 0; }
-  .collapsible #collapse-header {
-    background-color: #496E99;
-    height: 5em; }
+  nav #collapse-header {
+    background-color: #496E99; }
+    nav #collapse-header #toggle-icon {
+      margin: 0 auto; }
+      nav #collapse-header #toggle-icon:hover, nav #collapse-header #toggle-icon:focus {
+        color: #bbb; }
 
-form {
-  background-color: #fff; }
-  form #image-url {
-    font-size: 1.5em; }
-  form #image-url-text {
+.form-box {
+  background-color: #fff;
+  margin-bottom: 0;
+  padding-top: 1em; }
+  .form-box .input-1 {
+    padding-top: 1em; }
+  .form-box #image-url {
+    font-size: 1.75em;
+    padding-left: 0.5em; }
+  .form-box #image-url-text {
+    font-size: 1.25em;
     padding-left: 5px; }
-  form #textarea2 {
-    font-size: 1.5em; }
-  form #image-caption-text {
-    padding-bottom: 5px;
+  .form-box #error-url {
+    padding-bottom: 1em;
+    color: red; }
+  .form-box .input-2 {
+    margin-top: 1em; }
+  .form-box #textarea2 {
+    font-size: 1.75em;
+    padding-left: 0.5em; }
+  .form-box #image-caption-text {
+    font-size: 1.25em;
     padding-left: 5px; }
+  .form-box #error-caption {
+    color: red; }
+  .form-box #cancel-button {
+    margin-bottom: 10px; }
+  .form-box #submit-button {
+    margin-left: 5px;
+    margin-bottom: 10px; }
 
 .gallery-box {
   margin-top: 0;
-  background-color: #eee; }
+  margin-bottom: 0;
+  padding-top: 0.5em;
+  background-color: #eee;
+  text-align: center; }
   .gallery-box #gallery {
     font-size: 1.75em;
     background-color: #E0E1E2;
@@ -48,3 +73,15 @@ form {
       border-top: 1px solid #bbb;
       padding: 0.25em 0 0.25em 0.5em;
       text-align: left; }
+
+.delete-row {
+  margin-bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  background-color: #9e9e9e; }
+
+.footer {
+  border-top: 1px solid #aaa;
+  padding: 0.5em 1em;
+  font-size: 1.25em; }

@@ -13,41 +13,53 @@
         <h1>Infinite Images</h1>
     </div>
 
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div id="collapse-header" class="collapsible-header valign-wrapper">
-                <i id="toggle-icon" class="material-icons medium valign">add_circle</i>
-            </div>
-            <div class="collapsible-body">
-                <form>
-                    <div class="row">
-                        <div class="input-field col s10 offset-s1">
-                            <input id="image-url" type="url" class="validate">
-                            <label id="image-url-text" for="first_name">Image URL</label>
-                        </div>
-                        <div class="input-field col s10 offset-s1">
-                            <textarea id="textarea2" class="image-caption"></textarea>
-                            <label id="image-caption-text" for="textarea2">Image Caption</label>
-                        </div>
-                    </div>
-                    <button id="cancel-button" class="col s2 offset-s8 btn waves-effect waves-light grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Cancel!">Cancel</a>
-                    </button>
-                    <button id="submit-button" class="btn waves-effect waves-light green tooltipped" data-position="bottom" data-delay="50" data-tooltip="Submit!" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                    </button>
-                </form>
+    <nav class="toggle-button">
+        <div id="collapse-header" class="center-align">
+            <i id="toggle-icon" class="material-icons medium">expand_less</i>
         </div>
-        </li>
-    </ul>
+    </nav>
+
+    <section class="form-big-box">
+        <div class="row form-box">
+            <form>
+                <div class="row">
+                    <div class="input-field col s10 offset-s1 input-1">
+                        <input id="image-url" type="text">
+                        <label id="image-url-text" for="first_name">Image URL</label>
+                    </div>
+                    <div class="col s10 offset-s1" id="error-url"></div>
+                    <div class="input-field col s10 offset-s1 input-2">
+                        <textarea id="textarea2" class="image-caption"  ></textarea>
+                        <label id="image-caption-text" for="textarea2">Image Caption</label>
+                    </div>
+                    <div class="col s10 offset-s1" id="error-caption"></div>
+                </div>
+                <div class="col s2 offset-s6">
+                    <button id="cancel-button" class="btn waves-effect waves-light grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clear input">Cancel</button>
+                </div>
+                <div>
+                    <button id="submit-button" class="btn waves-effect waves-light green tooltipped" data-position="bottom" data-delay="50" data-tooltip="Show picture" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <section class="row gallery-box grey">
         <div class="col s12 m8 offset-m2" id="gallery"></div>
     </section>
-    <div class="row">
-        <button id="delete-all-button" class="col s2 offset-s10 btn waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Delete" type="submit" name="action">Delete All
+    <div class="row delete-row">
+        <button id="delete-all-button" class="col s2 offset-s10 btn waves-effect waves-light red darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="Delete" type="submit" name="action">Delete All
             <i class="material-icons right">delete</i>
         </button>
     </div>
+    <footer class="footer">
+        <span>A creation by</span>
+        <a href="http://www.drumsensei.com">Mike Mathew</a>
+        <span>for</span>
+        <a href="http://www.theironyard.com">The Iron Yard</a>
+    </footer>
 
 <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
