@@ -36,7 +36,6 @@ $(document).ready(function () {
     $cancelButton.click(function () {
         $imageUrl.val('');
         $imageCaption.val('');
-        console.log('it worked!!');
     });
 
     // function to show images in gallery
@@ -75,11 +74,10 @@ $(document).ready(function () {
             $errorUrl.html('<span>Please input a valid URL in a picture format.</span>');
             $imageUrl.css({ borderLeft: '4px solid red' });
             validUrl = false;
-            console.log('URL extension was no bueno');
         }
 
         // validate caption
-        if (newCaption !== '') {
+        if (newCaption !== '' || newCaption !== ' ') {
             $errorCaption.html('');
             $imageCaption.css({ borderLeft: '1px solid black' });
             validCaption = true;
@@ -87,7 +85,6 @@ $(document).ready(function () {
             $errorCaption.html('<span>Please submit a caption.</span>');
             $imageCaption.css({ borderLeft: '4px solid red' });
             validCaption = false;
-            console.log('empty caption');
         }
 
         if (validUrl === true && validCaption === true) {
